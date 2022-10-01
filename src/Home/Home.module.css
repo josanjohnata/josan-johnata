@@ -16,7 +16,7 @@ main {
 .header .toggleLeft {
   display: flex;
   align-self: flex-end;
-  margin-right: 0.75rem;
+  margin-right: 1rem;
 }
 
 .header img {
@@ -28,10 +28,79 @@ main {
 
 .title {
   font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
   color: var(--gray-300);
   padding-top: 0.75rem;
 }
 .subtitle {
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
   color: var(--gray-300);
 }
+
+.sectionMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.sectionMenu button {
+  margin-bottom: 0.5rem;
+  padding: 0 0.3rem 0 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: 1px solid var(--gray-300);
+  background-color: var(--green-700);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--gray-300);
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+
+}
+
+.sectionMenu button:hover {
+  animation: sectionIcons .3s;
+  animation-iteration-count: 5;
+}
+
+@keyframes sectionIcons {
+  0% {margin-left: 0;}
+  25% {margin-left: 7px;}
+  50% {margin-left: 0;}
+  75% {margin-left: -7px;}
+  100% {margin-left: 0;}
+}
+
+.sectionMenu .sectionProjects:hover {
+  color: var(--gray-400);
+}
+
+.sectionMenu .sectionBlog:hover {
+  color: var(--gray-400);
+}
+
+.sectionMenu .sectionSocialMedia:hover {
+  color: var(--gray-400);
+}
+
+.sectionMenu .sectionContact:hover {
+  color: var(--gray-400);
+}
+
+.sectionMenu button:hover {
+  border: 1px solid var(--gray-400);
+  background-color: var(--green-500);
+  color: var(--gray-400);
+}
+
