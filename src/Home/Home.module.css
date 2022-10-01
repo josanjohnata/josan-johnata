@@ -1,0 +1,37 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.header .toggleLeft {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 0.75rem;
+}
+
+.header img {
+  border: 1px solid var(--gray-300);
+  border-radius: 50%;
+  max-width: 40%;
+  height: auto;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  color: var(--gray-300);
+  padding-top: 0.75rem;
+}
+.subtitle {
+  font-family: 'Roboto', sans-serif;
+  color: var(--gray-300);
+}
