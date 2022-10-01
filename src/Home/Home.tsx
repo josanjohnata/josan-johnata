@@ -21,7 +21,7 @@ function Home() {
           </header>
           <section className={styles.sectionMenu}>
             <button>
-              Meus projetos
+              My projects
               <FolderOpen size={32} className={styles.sectionProjects} />
             </button>
             <button>
@@ -29,11 +29,11 @@ function Home() {
               <MediumLogo size={32} className={styles.sectionBlog} />
             </button>
             <button>
-              Redes sociais
+              Social medias
               <InstagramLogo size={32} className={styles.sectionSocialMedia} />
             </button>
             <button>
-              Contatos
+              Contacts
               <DeviceMobile size={32} className={styles.sectionContact} />
             </button>
           </section>
