@@ -104,3 +104,14 @@ main {
   color: var(--gray-400);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin-top: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: .8rem;
+  color: var(--gray-300);
+}

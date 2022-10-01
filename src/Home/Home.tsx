@@ -37,6 +37,7 @@ function Home() {
               <DeviceMobile size={32} className={styles.sectionContact} />
             </button>
           </section>
+          <footer>&copy; Copyright 2020 - 2022 All rights reserved | By Josan Johnata </footer>
         </main>
       </>
   );
