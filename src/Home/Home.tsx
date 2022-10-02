@@ -13,7 +13,7 @@ function Home() {
         <main>
           <header className={styles.header}>
             <ToggleLeft size={32} color='#808080' className={styles.toggleLeft} />
-            <img src='src/assets/icon-programer.png' alt="icon programmer" testID='home-image-header' />
+            <img src='src/assets/icon-programer.png' alt="icon programmer"/>
             <h1 className={styles.title}>Josan Johnata</h1>
             <p className={styles.subtitle}>Full Stack Developer</p>
           </header>
