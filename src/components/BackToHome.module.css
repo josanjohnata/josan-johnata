@@ -1,0 +1,8 @@
+.backToHome {
+  color: var(--gray-300);
+  background: transparent;
+  border: none;
+  margin: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}

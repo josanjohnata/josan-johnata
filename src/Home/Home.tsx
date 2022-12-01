@@ -6,10 +6,25 @@ import {
   DeviceMobile,
   ToggleLeft
 } from 'phosphor-react';
+import { useNavigate } from 'react-router';
 
 import johnIcon from '../assets/john-icon.png';
 
 function Home() {
+  const navigate = useNavigate();
+
+  const redirectMyProjects = () => {
+    navigate('/my-projects', { replace: true });
+  };
+
+  const redirectSocialMedias = () => {
+    navigate('/social-medias', { replace: true });
+  };
+
+  const redirectContacts = () => {
+    navigate('/contacts', { replace: true });
+  };
+
   return (
       <>
         <main>
@@ -20,19 +35,19 @@ function Home() {
             <p className={styles.subtitle}>Full Stack Developer</p>
           </header>
           <section className={styles.sectionMenu}>
-            <button>
+            <button onClick={() => redirectMyProjects()}>
               My projects
               <FolderOpen size={32} className={styles.sectionProjects} />
             </button>
-            <button>
+            <a href='https://medium.com/@josanjohnata' target={'_blank'}>
               Blog
               <MediumLogo size={32} className={styles.sectionBlog} />
-            </button>
-            <button>
+            </a>
+            <button onClick={() => redirectSocialMedias()}>
               Social medias
               <InstagramLogo size={32} className={styles.sectionSocialMedia} />
             </button>
-            <button>
+            <button onClick={() => redirectContacts()}>
               Contacts
               <DeviceMobile size={32} className={styles.sectionContact} />
             </button>

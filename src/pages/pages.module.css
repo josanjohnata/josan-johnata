@@ -1,46 +1,23 @@
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2rem;
-}
-
-.header .toggleLeft {
-  display: flex;
-  align-self: flex-end;
-  margin-right: 1rem;
-}
-
-.header img {
-  border: 1px solid var(--gray-300);
-  border-radius: 50%;
-  max-width: 40%;
-  height: auto;
-}
-
+/*
+===============
+Title section
+===============
+*/
 .title {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--gray-300);
-  padding-top: 0.75rem;
-}
-.subtitle {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--gray-300);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
 }
 
+/*
+===============
+Social Medias
+===============
+*/
 .sectionMenu {
   display: flex;
   flex-direction: column;
@@ -82,36 +59,19 @@ main {
   100% {margin-left: 0;}
 }
 
-.sectionMenu .sectionProjects:hover {
+.sectionMenu .instagramButton:hover {
   color: var(--gray-400);
 }
 
-.sectionMenu .sectionBlog:hover {
+.sectionMenu .tiktokButton:hover {
   color: var(--gray-400);
 }
 
-.sectionMenu .sectionSocialMedia:hover {
+.sectionMenu .youtubeButton:hover {
   color: var(--gray-400);
 }
-
-.sectionMenu .sectionContact:hover {
-  color: var(--gray-400);
-}
-
 .sectionMenu button:hover {
   border: 1px solid var(--gray-400);
   background-color: var(--green-500);
   color: var(--gray-400);
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 80%;
-  margin-top: 3rem;
-  font-family: 'Roboto', sans-serif;
-  font-size: .8rem;
-  color: var(--gray-300);
 }
