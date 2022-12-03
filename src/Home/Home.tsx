@@ -2,9 +2,9 @@ import styles from './Home.module.css';
 import {
   FolderOpen,
   MediumLogo,
-  InstagramLogo,
   DeviceMobile,
-  ToggleLeft
+  ToggleLeft,
+  Camera
 } from 'phosphor-react';
 import { useNavigate } from 'react-router';
 
@@ -45,7 +45,7 @@ function Home() {
             </a>
             <button onClick={() => redirectSocialMedias()}>
               Social medias
-              <InstagramLogo size={32} className={styles.sectionSocialMedia} />
+              <Camera size={32} className={styles.sectionSocialMedia} />
             </button>
             <button onClick={() => redirectContacts()}>
               Contacts
