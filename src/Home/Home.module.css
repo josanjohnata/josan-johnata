@@ -13,10 +13,11 @@ main {
   padding-top: 2rem;
 }
 
-.header .toggleLeft {
+.header .toggleButton {
   display: flex;
   align-self: flex-end;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .header img {

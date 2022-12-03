@@ -1,21 +1,21 @@
-import styles from './Home.module.css';
+import { useState } from 'react';
+
 import {
   FolderOpen,
   MediumLogo,
   DeviceMobile,
   ToggleLeft,
-  Camera
+  Camera,
+  ToggleRight
 } from 'phosphor-react';
 import { useNavigate } from 'react-router';
-
 import johnIcon from '../assets/john-icon.png';
 
-function Home() {
-  const navigate = useNavigate();
+import styles from './Home.module.css';
 
-  const redirectMyProjects = () => {
-    navigate('/my-projects', { replace: true });
-  };
+function Home() {
+  const [isLight, setIsLight] = useState(false);
+  const navigate = useNavigate();
 
   const redirectSocialMedias = () => {
     navigate('/social-medias', { replace: true });
@@ -29,7 +29,17 @@ function Home() {
       <>
         <main>
           <header className={styles.header}>
-            <ToggleLeft size={32} color='#808080' className={styles.toggleLeft} />
+            <span
+              className={styles.toggleButton}
+              onClick={() => {
+                setIsLight(!isLight);
+              }}  
+            >
+            {
+              isLight === true? <ToggleRight size={32} color='#4EA8DE' className={styles.toggleRight} /> :
+              <ToggleLeft size={32} color='#808080' className={styles.toggleLeft} />
+            }
+            </span>
             <img src={johnIcon} alt="icon programmer"/>
             <h1 className={styles.title}>Josan Johnata</h1>
             <p className={styles.subtitle}>Full Stack Developer</p>
