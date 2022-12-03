@@ -35,10 +35,10 @@ function Home() {
             <p className={styles.subtitle}>Full Stack Developer</p>
           </header>
           <section className={styles.sectionMenu}>
-            <button onClick={() => redirectMyProjects()}>
+            <a href={'https://github.com/josanjohnata'} target="_blank">
               My projects
               <FolderOpen size={32} className={styles.sectionProjects} />
-            </button>
+            </a>
             <a href='https://medium.com/@josanjohnata' target={'_blank'}>
               Blog
               <MediumLogo size={32} className={styles.sectionBlog} />
