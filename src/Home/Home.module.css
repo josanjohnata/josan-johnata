@@ -3,6 +3,47 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.darkTheme {
+  background: var(--gray-600);
+  color: var(--gray-100);
+}
+
+.lightTheme {
+  background: var(--gray-200);
+  color: var(--gray-700);
+}
+
+.lightTheme button, a {
+  margin-bottom: 0.5rem;
+  padding: 0 0.3rem 0 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: 1px solid var(--gray-400);
+  background-color: var(--green-300);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--gray-700);
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sectionMenu button:hover, a:hover {
+  animation: sectionIcons .3s;
+  animation-iteration-count: 5;
+  border: 1px solid var(--gray-400);
+  background-color: var(--green-500);
+  color: var(--gray-400);
 }
 
 .header {
@@ -73,6 +114,9 @@ main {
 .sectionMenu button:hover, a:hover {
   animation: sectionIcons .3s;
   animation-iteration-count: 5;
+  border: 1px solid var(--gray-400);
+  background-color: var(--green-500);
+  color: var(--gray-400);
 }
 
 @keyframes sectionIcons {
@@ -81,28 +125,6 @@ main {
   50% {margin-left: 0;}
   75% {margin-left: -7px;}
   100% {margin-left: 0;}
-}
-
-.sectionMenu .sectionProjects:hover {
-  color: var(--gray-400);
-}
-
-.sectionMenu .sectionBlog:hover {
-  color: var(--gray-400);
-}
-
-.sectionMenu .sectionSocialMedia:hover {
-  color: var(--gray-400);
-}
-
-.sectionMenu .sectionContact:hover {
-  color: var(--gray-400);
-}
-
-.sectionMenu button:hover {
-  border: 1px solid var(--gray-400);
-  background-color: var(--green-500);
-  color: var(--gray-400);
 }
 
 footer {

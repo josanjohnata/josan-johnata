@@ -49,6 +49,9 @@ Social Medias
 .sectionMenu button:hover, a:hover {
   animation: sectionIcons .3s;
   animation-iteration-count: 5;
+  border: 1px solid var(--gray-400);
+  background-color: var(--green-500);
+  color: var(--gray-400);
 }
 
 @keyframes sectionIcons {

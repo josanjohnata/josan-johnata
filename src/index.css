@@ -15,19 +15,13 @@
 
 :focus {
   outline: transparent;
-  box-shadow: 0 0 0 2px var(--blueDark);
+  box-shadow: 0 0 0 2px var(--green-300);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background: var(--gray-600);
-  color: var(--gray-100);
-  -webkit-font-smoothing: antialiased;
 }
 
 body, input, textarea, button {
