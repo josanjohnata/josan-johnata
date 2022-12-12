@@ -18,7 +18,7 @@ main {
   color: var(--gray-700);
 }
 
-.lightTheme button, a {
+.lightTheme a, .lightTheme button {
   margin-bottom: 0.5rem;
   padding: 0 0.3rem 0 0.3rem;
   display: flex;
@@ -38,7 +38,7 @@ main {
   text-decoration: none;
 }
 
-.sectionMenu button:hover, a:hover {
+.sectionMenu a:hover, .sectionMenu button:hover {
   animation: sectionIcons .3s;
   animation-iteration-count: 5;
   border: 1px solid var(--gray-400);
