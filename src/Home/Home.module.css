@@ -17,8 +17,8 @@ main {
   background: var(--gray-200);
   color: var(--gray-700);
 }
-
-.lightTheme a, .lightTheme button {
+/* 
+.lightTheme a, button {
   margin-bottom: 0.5rem;
   padding: 0 0.3rem 0 0.3rem;
   display: flex;
@@ -36,15 +36,43 @@ main {
   transition: background-color 0.3s linear;
   cursor: pointer;
   text-decoration: none;
-}
+} */
 
-.sectionMenu a:hover, .sectionMenu button:hover {
+/* .sectionMenuLight a:hover {
   animation: sectionIcons .3s;
   animation-iteration-count: 5;
   border: 1px solid var(--gray-400);
   background-color: var(--green-500);
   color: var(--gray-400);
-}
+} */
+
+/* .lightTheme button {
+  margin-bottom: 0.5rem;
+  padding: 0 0.3rem 0 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: 1px solid var(--gray-400);
+  background-color: var(--green-300);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--gray-700);
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+} */
+
+/* .sectionMenuLight button:hover {
+  animation: sectionIcons .3s;
+  animation-iteration-count: 5;
+  border: 1px solid var(--gray-400);
+  background-color: var(--green-500);
+  color: var(--gray-400);
+} */
 
 .header {
   display: flex;
@@ -56,13 +84,34 @@ main {
 
 .header .toggleButton {
   display: flex;
+  align-items: center;
   align-self: flex-end;
+  justify-content: space-between;
+  width: 5.5rem;
   margin-right: 1rem;
   cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gray-400);
+}
+
+.header .darkTheme {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  justify-content: space-between;
+  width: 5.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4EA8DE;
 }
 
 .header img {
-  border: 1px solid var(--gray-300);
+  border: 1px solid var(--gray-400);
   border-radius: 50%;
   max-width: 40%;
   height: auto;
@@ -72,10 +121,27 @@ main {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 3rem;
+  color: var(--gray-400);
+  padding-top: 0.75rem;
+}
+
+.titleDark {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
   color: var(--gray-300);
   padding-top: 0.75rem;
 }
+
 .subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--gray-400);
+}
+
+.subtitleDark {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -100,12 +166,12 @@ main {
   width: 13rem;
   height: 3rem;
   border-radius: 5px;
-  border: 1px solid var(--gray-300);
-  background-color: var(--green-700);
+  color: var(--gray-400);
+  border: 1px solid var(--gray-400);
+  background-color: var(--green-500);
   font-family: 'Roboto', sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--gray-300);
   transition: background-color 0.3s linear;
   cursor: pointer;
   text-decoration: none;
@@ -114,9 +180,41 @@ main {
 .sectionMenu button:hover, a:hover {
   animation: sectionIcons .3s;
   animation-iteration-count: 5;
+  background-color: var(--green-300);
+}
+
+.lightThemeLight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.lightThemeLight button, a {
+  margin-bottom: 0.5rem;
+  padding: 0 0.3rem 0 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13rem;
+  height: 3rem;
+  border-radius: 5px;
+  color: var(--gray-400);
   border: 1px solid var(--gray-400);
   background-color: var(--green-500);
-  color: var(--gray-400);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.lightThemeLight button:hover, a:hover {
+  animation: sectionIcons .3s;
+  animation-iteration-count: 5;
+  background-color: var(--green-300);
 }
 
 @keyframes sectionIcons {

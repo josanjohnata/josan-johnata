@@ -26,7 +26,7 @@ Social Medias
   margin-top: 0.5rem;
 }
 
-.sectionMenu button, a {
+/* .sectionMenu button, a {
   margin-bottom: 0.5rem;
   padding: 0 0.3rem 0 0.3rem;
   display: flex;
@@ -44,37 +44,38 @@ Social Medias
   transition: background-color 0.3s linear;
   cursor: pointer;
   text-decoration: none;
-}
+} */
 
-.sectionMenu button:hover, a:hover {
+/* .sectionMenu button:hover, a:hover {
   animation: sectionIcons .3s;
   animation-iteration-count: 5;
   border: 1px solid var(--gray-400);
   background-color: var(--green-500);
   color: var(--gray-400);
-}
+} */
 
-@keyframes sectionIcons {
+/* @keyframes sectionIcons {
   0% {margin-left: 0;}
   25% {margin-left: 7px;}
   50% {margin-left: 0;}
   75% {margin-left: -7px;}
   100% {margin-left: 0;}
-}
+} */
 
-.sectionMenu .instagramButton:hover {
+/* .sectionMenu .instagramButton:hover {
   color: var(--gray-400);
-}
+} */
 
-.sectionMenu .tiktokButton:hover {
+/* .sectionMenu .tiktokButton:hover {
   color: var(--gray-400);
-}
+} */
 
-.sectionMenu .youtubeButton:hover {
+/* .sectionMenu .youtubeButton:hover {
   color: var(--gray-400);
-}
-.sectionMenu button:hover {
+} */
+
+/* .sectionMenu button:hover {
   border: 1px solid var(--gray-400);
   background-color: var(--green-500);
   color: var(--gray-400);
-}
+} */
